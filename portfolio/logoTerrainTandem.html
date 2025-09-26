@@ -11,6 +11,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
+		<style>
+			.container {
+				display: flex;
+				align-items: flex-start;
+				gap: 1rem;
+			}
+
+			.container img {
+				max-width: 85%;
+				height: auto;
+			}
+
+			/* On small screens: stack vertically, image first */
+			@media (max-width: 600px) {
+				.container {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+				.container img {
+					max-width: 90%;
+					height: auto;
+					margin: auto;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -55,12 +81,14 @@
 								<img src="../portfolioImages/logoTerraInTandem.png" alt="" style="width:30%; margin:auto;" />
 							</span>
 							<p>I edited videos and created a <a href="https://www.youtube.com/@TerraInTandem">Youtube channel</a> and <a href="https://www.instagram.com/terraintandem/">Instagram page</a> for the brand.</p>
-							<span class="image main">
-								<img src="../portfolioImages/youtubeTerrainTandem.png" alt="" style="width:45%; margin:auto;" />
-							</span>
-							<span class="image main">
-								<img src="../portfolioImages/instagramTerrainTandem.png" alt="" style="width:45%; margin:auto;" />
-							</span>
+							<div class="container">
+								<span class="image main">
+									<img src="../portfolioImages/youtubeTerrainTandem.png" alt="" />
+								</span>
+								<span class="image main">
+									<img src="../portfolioImages/instagramTerrainTandem.png" alt="" />
+								</span>
+							</div>
 						</div>
 					</div>
 
