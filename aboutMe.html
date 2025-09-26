@@ -11,6 +11,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.container {
+				display: flex;
+				align-items: flex-start;
+				gap: 1rem;
+			}
+
+			.container img {
+				max-width: 25%;
+				height: auto;
+			}
+
+			.text {
+				flex: 1;
+			}
+
+			/* On small screens: stack vertically, image first */
+			@media (max-width: 600px) {
+				.container {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+				.container img {
+					max-width: 50%;
+					height: auto;
+					margin: auto;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -50,15 +80,21 @@
 					<div id="main">
 						<div class="inner">
 							<h1>About Me</h1>
-							<span class="image main"><img src="portfolioImages/Barbara Cimatti Headshot.png" alt="" style="width:25%; margin:auto" /></span>
-							<p>Barbara Vasconcelos Cimatti was born in Boston, but grew up in Brazil for most of her life. 
-								In 2018, Barbara got her bachelor's degree in Business Administration and Interactive Media with a minor in International Affairs from Northeastern University (Boston). 
-								While in university, she worked for several organizations as a marketing intern and assistant.</p>
-							<p>After graduation, Barbara taught English privately in Thailand and as a volunteer in Peace Corps Ecuador. 
-								She was evacuated from Ecuador due to COVID-19 in early 2020, and later completed her studies with a masters degree in International Relations at Syracuse University. 
-							    During her masters, she worked at different international organizations using her skills in communications and marketing.</p>
-							<p>After her masters, she worked full-time as a recruiter and project manager in the international development field, where she learned valuable skills in managing budgets, people, and tight deadlines.</p>
-							<p>She is now looking to bring her skills to work in a marketing and communications role at a mission-driven organization.</p></div>
+							<div class="container">
+								<img src="portfolioImages/Barbara Cimatti Headshot.png" alt="">
+								<div class="text">
+								<p>Barbara Vasconcelos Cimatti was born in Boston, but grew up in Brazil for most of her life. 
+									In 2018, Barbara got her bachelor's degree in Business Administration and Interactive Media with a minor in International Affairs from Northeastern University (Boston). 
+									While in university, she worked for several organizations as a marketing intern and assistant.</p>
+								<p>After graduation, Barbara taught English privately in Thailand and as a volunteer in Peace Corps Ecuador. 
+									She was evacuated from Ecuador due to COVID-19 in early 2020, and later completed her studies with a masters degree in International Relations at Syracuse University. 
+									During her masters, she worked at different international organizations using her skills in communications and marketing.</p>
+								<p>After her masters, she worked full-time as a recruiter and project manager in the international development field, where she learned valuable skills in managing budgets, people, and tight deadlines.</p>
+								<p>She is now looking to bring her skills to work in a marketing and communications role at a mission-driven organization.</p>
+								</div>
+							</div>
+
+							</div>
 					</div>
 
 				<!-- Footer -->
